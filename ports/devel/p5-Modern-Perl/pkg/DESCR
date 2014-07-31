@@ -1,0 +1,52 @@
+Modern Perl programs use several modules to enable additional features of Perl
+and of the CPAN. Instead of copying and pasting all of these use lines, instead
+write only one:
+
+    use Modern::Perl;
+
+This enables the strict and warnings pragmas, as well as all of the features
+available in Perl 5.10. It also enables C3 method resolution order as
+documented in perldoc mro and loads IO::File and IO::Handle so that you may
+call methods on filehandles. In the future, it may include additional core
+modules and pragmas.
+
+Because so much of this module's behavior uses lexically scoped pragmas, you
+may disable these pragmas within an inner scope with:
+
+    no Modern::Perl;
+
+See http://www.modernperlbooks.com/mt/2009/01/toward-a-modernperl.html for more
+information, http://www.modernperlbooks.com/ for further discussion of Modern
+Perl and its implications, and http://onyxneon.com/books/modern_perl/index.html
+for a freely-downloadable Modern Perl tutorial.
+
+Forward Compatibility
+
+For forward compatibility, I recommend you specify a year as the single
+optional import tag. For example:
+
+    use Modern::Perl '2009';
+    use Modern::Perl '2010';
+
+... both enable 5.10 features, while:
+
+    use Modern::Perl '2011';
+
+... enables 5.12 features:
+
+    use Modern::Perl '2012';
+
+... enables 5.14 features:
+
+    use Modern::Perl '2013';
+
+... enables 5.16 features, and:
+
+    use Modern::Perl '2014';
+
+... enables 5.18 features. Obviously you cannot use newer features on earlier
+versions. Perl will throw the appropriate exception if you try.
+
+By mid-2014, this module will drop support for 5.10 and 5.12 and will complain
+(once per process) if you use a year too old. As of January 2014, Perl 5.14 is
+unsupported by the Perl 5 Porters, so please consider upgrading.
