@@ -1,6 +1,5 @@
 @comment $OpenBSD$
 bin/cpanm
-${P5SITE}/App/
 ${P5SITE}/App/cpanminus/
 ${P5SITE}/App/cpanminus.pm
 ${P5SITE}/App/cpanminus/fatscript.pm
