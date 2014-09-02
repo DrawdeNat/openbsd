@@ -15,8 +15,8 @@ ${P5SITE}/local/lib.pm
 @man man/man3p/POD2::PT_BR::local::lib.3p
 @man man/man3p/lib::core::only.3p
 @man man/man3p/local::lib.3p
-share/doc/local-lib-2.000012/
-share/doc/local-lib-2.000012/Changes
-share/doc/local-lib-2.000012/README
+share/doc/local-lib/
+share/doc/local-lib/Changes
+share/doc/local-lib/README
 share/examples/p5-local-lib/
 share/examples/p5-local-lib/scripted_install.pl
