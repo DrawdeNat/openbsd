@@ -13,9 +13,7 @@ MAINTAINER =		Edward <edward@rdtan.net>
 PERMIT_PACKAGE_CDROM =	Yes
 
 post-install:
-	@mkdir -p ${PREFIX}/share/doc/${DISTNAME}
-	${INSTALL_DATA} ${WRKDIST}/README ${PREFIX}/share/doc/${DISTNAME}/
-	${INSTALL_DATA} ${WRKDIST}/Changes ${PREFIX}/share/doc/${DISTNAME}/
-	${INSTALL_DATA} ${WRKDIST}/LICENSE ${PREFIX}/share/doc/${DISTNAME}/
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/Modern-Perl
+	${INSTALL_DATA} ${WRKSRC}/{README,Changes,LICENSE} ${PREFIX}/share/doc/Modern-Perl
 
 .include <bsd.port.mk>
