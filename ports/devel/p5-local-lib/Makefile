@@ -17,8 +17,7 @@ MODCPAN_EXAMPLES_DIST=  eg
 
 post-install:
 	${MODCPAN_POST_INSTALL}
-	@mkdir -p ${PREFIX}/share/doc/${DISTNAME}
-	${INSTALL_DATA} ${WRKDIST}/README ${PREFIX}/share/doc/${DISTNAME}/
-	${INSTALL_DATA} ${WRKDIST}/Changes ${PREFIX}/share/doc/${DISTNAME}/
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/local-lib
+	${INSTALL_DATA} ${WRKSRC}/{README,Changes} ${PREFIX}/share/doc/local-lib/
 
 .include <bsd.port.mk>
