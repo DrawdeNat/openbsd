@@ -2,7 +2,7 @@
 ${P5SITE}/Modern/
 ${P5SITE}/Modern/Perl.pm
 @man man/man3p/Modern::Perl.3p
-share/doc/Modern-Perl/
-share/doc/Modern-Perl/Changes
-share/doc/Modern-Perl/LICENSE
-share/doc/Modern-Perl/README
+share/doc/p5-Modern-Perl/
+share/doc/p5-Modern-Perl/Changes
+share/doc/p5-Modern-Perl/LICENSE
+share/doc/p5-Modern-Perl/README
