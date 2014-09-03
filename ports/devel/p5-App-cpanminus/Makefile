@@ -14,6 +14,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/App-cpanminus
-	${INSTALL_DATA} ${WRKSRC}/{README,Changes,LICENSE} ${PREFIX}/share/doc/App-cpanminus/
+	${INSTALL_DATA} \
+		${WRKSRC}/{README,Changes,LICENSE} ${PREFIX}/share/doc/App-cpanminus/
 
 .include <bsd.port.mk>
