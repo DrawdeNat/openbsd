@@ -14,6 +14,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/Modern-Perl
-	${INSTALL_DATA} ${WRKSRC}/{README,Changes,LICENSE} ${PREFIX}/share/doc/Modern-Perl
+	${INSTALL_DATA} \
+		${WRKSRC}/{README,Changes,LICENSE} ${PREFIX}/share/doc/Modern-Perl
 
 .include <bsd.port.mk>
