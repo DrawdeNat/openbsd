@@ -17,7 +17,7 @@ MODCPAN_EXAMPLES_DIST=  eg
 
 post-install:
 	${MODCPAN_POST_INSTALL}
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/local-lib
-	${INSTALL_DATA} ${WRKSRC}/{README,Changes} ${PREFIX}/share/doc/local-lib/
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/p5-local-lib
+	${INSTALL_DATA} ${WRKSRC}/{README,Changes} ${PREFIX}/share/doc/p5-local-lib/
 
 .include <bsd.port.mk>
